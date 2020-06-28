@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "307767977938",
+    "firebase_url": "https://juego-tdah.firebaseio.com",
+    "project_id": "juego-tdah",
+    "storage_bucket": "juego-tdah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307767977938:android:f30e128751d30924690a0b",
+        "android_client_info": {
+          "package_name": "com.example.braintrainer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307767977938-c8ne0qq1h52psh33q5s15tdeh4fk7uit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.braintrainer",
+            "certificate_hash": "53dcc2715477ec23fa27499da903fa0a66292f30"
+          }
+        },
+        {
+          "client_id": "307767977938-jp9g0hvqro1qtsnuo7tq4ooh4jivklqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqYQvxTgbX37aBnSkzi-8mNpf5-Ksn-BU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307767977938-jp9g0hvqro1qtsnuo7tq4ooh4jivklqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
