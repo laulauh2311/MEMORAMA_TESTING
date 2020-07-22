@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".VerPuntaje">
+
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/trofeo" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/botonredondo2"
+        android:stretchColumns="0,1,2,3">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ID"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="NIVEL"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TIEMPO"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PUNTAJE"
+                android:textColor="#000000"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="FACIL"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00:00:20"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6 Puntos"
+                android:textColor="#000000"
+                android:gravity="center"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="INTERMEDIO"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00:00:60"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8 Puntos"
+                android:textColor="#000000"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="DIFICIL"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00:01:10"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="10 Puntos"
+                android:textColor="#000000"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/PuntajeFacil"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/Facil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="FACIL"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00:00:15"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6 Puntos"
+                android:textColor="#000000"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/PuntajeIntermedio"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/Intermedio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="INTERMEDIO"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00:00:35"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8 Puntos"
+                android:textColor="#000000"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/PuntajeTotal"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="------"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/Total"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="------"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total:"
+                android:textColor="#000000"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="38 Puntos"
+                android:textColor="#000000"
+                android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/Guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Guardar"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:background="@drawable/botonredondo_verde"/>
+            <Button
+                android:id="@+id/Salir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SALIR"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:background="@drawable/botonredondo_rojo"/>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

@@ -20,6 +20,23 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
 
+/////////////////////////////////////////////////
+//                                             //
+//   Programadores de Codigo:                  //
+//   - Alvaro Berrios Zuniga                   //
+//   - Christian Yataco Tapia                  //
+//                                             //
+//     Testers:                                //
+//   - Andrea Laura Oliva                      //
+//   - Manuel Hernandez Medina                 //
+//                                             //
+//    Usuario:                                 //
+//   - Manuel Hernandez Medina                 //
+//                                             //
+/////////////////////////////////////////////////
+
+
+
 public class Registro extends AppCompatActivity {
     private EditText Nombre , Apellido , Edad , Correo , Contraseña;
     private Button registrar;

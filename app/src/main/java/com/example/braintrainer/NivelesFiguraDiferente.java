@@ -25,5 +25,13 @@ public class NivelesFiguraDiferente extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        intermedio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(NivelesFiguraDiferente.this ,Diferente_Nivel_Intermedio.class);
+                startActivity(i);
+            }
+        });
     }
 }

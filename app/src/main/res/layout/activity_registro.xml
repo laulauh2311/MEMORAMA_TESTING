@@ -64,8 +64,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:elevation="5dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/botonredondo1"
@@ -134,6 +134,7 @@
                 android:layout_marginStart="60dp"
                 android:layout_marginEnd="60dp"
                 android:layout_marginBottom="20dp"
+                android:textStyle="bold"
                 android:background="@drawable/botonredondo"
                 android:text="Registrar Usuario"
                 android:fontFamily="@font/roboto_bold"

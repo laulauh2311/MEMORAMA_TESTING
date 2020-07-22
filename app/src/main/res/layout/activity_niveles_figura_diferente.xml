@@ -16,7 +16,7 @@
         android:layout_marginRight="8dp"
         android:fontFamily="@font/roboto_black"
         android:gravity="center"
-        android:text="Encuentra la figura \n que es diferente"
+        android:text="Encuentra la figura \n que es diferente a las demás"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

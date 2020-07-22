@@ -21,6 +21,23 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/////////////////////////////////////////////////
+//                                             //
+//   Programadores de Codigo:                  //
+//   - Alvaro Berrios Zuniga                   //
+//   - Christian Yataco Tapia                  //
+//                                             //
+//     Testers:                                //
+//   - Andrea Laura Oliva                      //
+//   - Manuel Hernandez Medina                 //
+//                                             //
+//    Usuario:                                 //
+//   - Manuel Hernandez Medina                 //
+//                                             //
+/////////////////////////////////////////////////
+
+
+
 public class MemoNivelFacil extends AppCompatActivity {
 
     private ImageButton e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12;
@@ -47,7 +64,7 @@ public class MemoNivelFacil extends AppCompatActivity {
 
     int puntuacion = 0;
 
-    TextView textoPuntuacion , cronometro;
+    TextView textoPuntuacion , cronometro , tiempoganador;
 
     //Cronometro
     private Chronometer chronometer;
@@ -56,6 +73,7 @@ public class MemoNivelFacil extends AppCompatActivity {
 
     //Sonido
     MediaPlayer sonido , sonidoperder , sonidoacierto;
+
 
 
     @Override
@@ -71,19 +89,26 @@ public class MemoNivelFacil extends AppCompatActivity {
         sonidoperder = MediaPlayer.create(this,R.raw.sonidoperder);
         sonidoacierto = MediaPlayer.create(this,R.raw.sonidoacierto);
         siguiente = (Button) findViewById(R.id.Siguiente);
+        //tiempoganador = (TextView) findViewById(R.id.PuntajeGanador);
+
+        //Intent i = new Intent(this,VerPuntaje.class);
+        //i.putExtra("Cronometro",chronometer.getContentDescription().toString());
+
 
         //chronometer.setFormat("Time: %s");
         chronometer.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
             @Override
             public void onChronometerTick(Chronometer chronometer) {
+                //tiempoganador.setText(chronometer.getText().toString());
+                //Intent i = new Intent(this,VerPuntaje.class);
+                //i.putExtra("Cronometro",chronometer.getContentDescription().toString());
+
                 if((SystemClock.elapsedRealtime() - chronometer.getBase()) >= 40000){
                     PauseChronometer();
                     chronometer.setBase(SystemClock.elapsedRealtime());
                     AlertDialog.Builder builder = new AlertDialog.Builder(MemoNivelFacil.this);
                     // Este es el sonido que suena con la perdida
                     sonidoperder.start();
-                    //builder.setTitle(" ¿ Deseas Salir de Figuras Pares ?");
-                    //builder.setMessage(" Has Ganado !!");
                     builder.setView(R.layout.dialogo_perdedor);
                     builder.setPositiveButton("Reintentar", new DialogInterface.OnClickListener() {
                         @Override
@@ -109,6 +134,8 @@ public class MemoNivelFacil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
              iniciar();
+             Intent i = new Intent(MemoNivelFacil.this,VerPuntaje.class);
+             i.putExtra("NivelFacil","FACIL");
             }
         });
 
@@ -185,7 +212,8 @@ public class MemoNivelFacil extends AppCompatActivity {
             chronometer.start();
             running = true;
         }
-    }
+
+}
 
     public void PauseChronometer(){
         if(running){
@@ -194,7 +222,6 @@ public class MemoNivelFacil extends AppCompatActivity {
             running = false;
         }
     }
-
     public void ResetChronometer(){
       chronometer.setBase(SystemClock.elapsedRealtime());
       pauseOffset = 0;
@@ -286,8 +313,6 @@ public class MemoNivelFacil extends AppCompatActivity {
                     PauseChronometer();
                     AlertDialog.Builder builder = new AlertDialog.Builder(MemoNivelFacil.this);
                     sonido.start();
-                    //builder.setTitle(" ¿ Deseas Salir de Figuras Pares ?");
-                    //builder.setMessage(" Has Ganado !!");
                     builder.setView(R.layout.dialogo_ganador);
                     builder.setPositiveButton("Continuar", new DialogInterface.OnClickListener() {
                         @Override

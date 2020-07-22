@@ -14,6 +14,23 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+
+/////////////////////////////////////////////////
+//                                             //
+//   Programadores de Codigo:                  //
+//   - Alvaro Berrios Zuniga                   //
+//   - Christian Yataco Tapia                  //
+//                                             //
+//     Testers:                                //
+//   - Andrea Laura Oliva                      //
+//   - Manuel Hernandez Medina                 //
+//                                             //
+//    Usuario:                                 //
+//   - Manuel Hernandez Medina                 //
+//                                             //
+/////////////////////////////////////////////////
+
+
 public class LoginActivity extends AppCompatActivity {
     private Button registro , Login;
     private EditText Usuario , Contraseña;
@@ -54,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Intent i = new Intent(LoginActivity.this , Principal.class);
+                    Intent i = new Intent(LoginActivity.this , NivelesMemorama.class);
                     startActivity(i);
                     finish();
                 }else{
@@ -68,7 +85,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         if(mAuth.getCurrentUser() != null){
-            Intent i = new Intent(LoginActivity.this , Principal.class);
+            Intent i = new Intent(LoginActivity.this , NivelesMemorama.class);
             startActivity(i);
             finish();
         }

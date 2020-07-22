@@ -12,8 +12,8 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="140dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="120dp"
         app:srcCompat="@drawable/brain" />
 
     <TextView
@@ -23,6 +23,8 @@
         android:layout_marginStart="24dp"
         android:gravity="center"
         android:textSize="22dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="24dp"
         android:text="@string/app_name" />
@@ -34,6 +36,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-condensed"
         android:background="@drawable/edittextredondo"
         android:drawableLeft="@drawable/ic_account_circle_black_usuario"
         android:hint="@string/prompt_email"
@@ -47,6 +50,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-condensed"
         android:background="@drawable/edittextredondo"
         android:drawableLeft="@drawable/ic_lock_black_paswword"
         android:hint="@string/prompt_password"
@@ -61,6 +65,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="60dp"
+        android:textStyle="bold"
         android:background="@drawable/botonredondo"
         android:text="@string/action_sign_in"
         android:textColor="#33322F"
@@ -72,6 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text="@string/Cuenta" />
 
@@ -83,6 +89,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="100dp"
+        android:fontFamily="sans-serif-medium"
         android:layout_marginBottom="8dp"
         android:text="@string/Registrate"
         android:textSize="14dp" />

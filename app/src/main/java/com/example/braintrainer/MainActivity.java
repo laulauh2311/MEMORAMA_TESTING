@@ -9,6 +9,22 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+/////////////////////////////////////////////////
+//                                             //
+//   Programadores de Codigo:                  //
+//   - Alvaro Berrios Zuniga                   //
+//   - Christian Yataco Tapia                  //
+//                                             //
+//     Testers:                                //
+//   - Andrea Laura Oliva                      //
+//   - Manuel Hernandez Medina                 //
+//                                             //
+//    Usuario:                                 //
+//   - Manuel Hernandez Medina                 //
+//                                             //
+/////////////////////////////////////////////////
+
+
 public class MainActivity extends AppCompatActivity {
     private ImageView imagen;
     private static int splashTimeOut=2000;

@@ -20,6 +20,22 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/////////////////////////////////////////////////
+//                                             //
+//   Programadores de Codigo:                  //
+//   - Alvaro Berrios Zuniga                   //
+//   - Christian Yataco Tapia                  //
+//                                             //
+//     Testers:                                //
+//   - Andrea Laura Oliva                      //
+//   - Manuel Hernandez Medina                 //
+//                                             //
+//    Usuario:                                 //
+//   - Manuel Hernandez Medina                 //
+//                                             //
+/////////////////////////////////////////////////
+
+
 public class Memo_Nivel_Intermedio extends AppCompatActivity {
     private ImageButton e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16;
     Button iniciar , salir ;

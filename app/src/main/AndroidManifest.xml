@@ -9,8 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DiferenteNivelFacil"></activity>
-        <activity android:name=".NivelesFiguraDiferente" />
+        <activity android:name=".VerPuntaje"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".DiferenteNivelDificil"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Diferente_Nivel_Intermedio"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DiferenteNivelFacil"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NivelesFiguraDiferente"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MemoNivelDificil"
             android:screenOrientation="portrait" />
