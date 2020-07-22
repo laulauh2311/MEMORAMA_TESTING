@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -36,6 +37,7 @@ public class NivelesMemorama extends AppCompatActivity {
     private Button facil , intermedio , dificil , puntajes ;
     private FirebaseAuth mAuth;
     private DatabaseReference mReference;
+    public TextView bienvenida;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +48,7 @@ public class NivelesMemorama extends AppCompatActivity {
         puntajes = (Button) findViewById(R.id.BotonPuntajes);
         mAuth = FirebaseAuth.getInstance();
         mReference = FirebaseDatabase.getInstance().getReference();
+        bienvenida = (TextView) findViewById(R.id.Usuario);
 
         facil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,7 +91,8 @@ public class NivelesMemorama extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
                     String Nombre = dataSnapshot.child("Nombres").getValue().toString();
-                    Toast.makeText(NivelesMemorama.this,"Bienvenido(a)" + Nombre,Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(NivelesMemorama.this,"Bienvenido(a)" + Nombre,Toast.LENGTH_SHORT).show();
+                    bienvenida.setText(Nombre);
                 }
             }
             @Override

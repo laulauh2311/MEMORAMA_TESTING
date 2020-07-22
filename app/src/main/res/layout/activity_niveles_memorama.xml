@@ -9,6 +9,25 @@
     tools:context=".NivelesMemorama">
 
 
+    <TextView
+        android:id="@+id/Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonredondo3"
+        android:text="Usuario"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_juego_memorama"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
     <ImageView
         android:id="@+id/imageView21"
         android:layout_width="match_parent"
